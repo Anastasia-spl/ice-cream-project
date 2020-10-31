@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="button__up" href="#header">
+        <svg class="up" aria-label="Pink-cercle">
+          <use class="up-icon" href="./images/sprite.svg#up"></use>
+        </svg>
+      </a>
+      <div class="page-header__header" id="header">
+        <a class="button__up" href="#header">
+          <svg class="up" aria-label="Up">
+            <use class="up-icon" href="./images/sprite.svg#up"></use>
+          </svg>
+        </a>
+        <a class="logo" href="">
+          <img
+            class="logo__img"
+            src="./images/desktop/logo.png"
+            alt="Icecream"
+            width="199"
+          />
+        </a>
+        <div class="page-header__buttons" data-button-tablet>
+          <button
+            class="burger-menu"
+            type="button"
+            aria-expanded="false"
+            <!--
+            aria-controls="menu-container"
+            --
+            data-modal-open
+          >
+            <svg
+              class="burger-menu__icon"
+              width="20"
+              height="12"
+              aria-label="Switcher of mobile menu"
+            >
+              <use
+                class="icon__burger"
+                href="./images/sprite.svg#burger"
+                width="20"
+                height="12"
+              ></use>
+            </svg>
+          </button>
+
+          <button
+            data-open-modal-2
+            class="button__tablet--buy-now"
+            type="button"
+          >
+            Buy now
+            <svg
+              class="button__buy-now"
+              width="19"
+              height="32"
+              aria-label="Button buy now"
+            >
+              <use
+                class="buy-now__icon"
+                href="./images/sprite.svg#buy-now-button"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-navigation" data-modal>
+          <button
+            class="burger-menu--modal"
+            type="button"
+            aria-expanded="false"
+            <!--
+            aria-controls="menu-container"
+            --
+            data-modal-close
+          >
+            <svg
+              class="burger-menu__icon"
+              width="14"
+              height="14"
+              aria-label="Switcher of mobile menu"
+            >
+              <use
+                class="icon__close"
+                href="./images/sprite.svg#close"
+                width="14"
+                height="14"
+              ></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link current" href="#header">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#collage">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#how_made">How it’s made?</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#products">Our products</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#address">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button data-open-modal class="button__mobile--buy-now" type="button">
+            Buy now
+            <svg class="button__buy-now" aria-label="Button buy now">
+              <use
+                class="buy-now__icon"
+                href="./images/sprite.svg#buy-now-button"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="page-header__container container">
+        <picture class="icecream-image">
+          <source
+            srcset="
+              ./images/desktop/header-icecream.png    1x,
+              ./images/desktop/header-icecream@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/header-icecream.png    1x,
+              ./images/tablet/header-icecream@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/header-icecream.png    1x,
+              ./images/mobile/header-icecream@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/desktop/header-icecream.png"
+            alt="Icecream"
+            width="171"
+          />
+        </picture>
+
+        <div class="hero">
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title--dark">passion</span>
+          </h1>
+          <div class="hero__button">
+            <a class="hero__button--dark" href="">Products</a>
+            <a class="hero__button--light" href="">How it’s made?</a>
+          </div>
+        </div>
+
+        <div class="eco">
+          <picture class="eco__image">
+            <source
+              srcset="
+                ./images/desktop/milk.png    1x,
+                ./images/desktop/milk@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/milk.png    1x,
+                ./images/tablet/milk@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./images/desktop/milk.png" alt="EcoBio" width="200" />
+          </picture>
+          <div class="eco__content">
+            <p class="eco__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <a class="eco__link" href="">
+              <svg class="eco__arrow" aria-label="Pink-cercle">
+                <use href="./images/sprite.svg#icon-products-link"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="tasty">
+          <ul class="tasty__list">
+            <li class="tasty__item">
+              <span class="tasty__number">16</span>
+              <p class="tasty__text">cafes</p>
+            </li>
+            <li class="tasty__item">
+              <span class="tasty__number">23</span>
+              <p class="tasty__text">food trucks</p>
+            </li>
+          </ul>
+        </div>
+        <picture class="tasty__girl">
+          <source
+            srcset="
+              ./images/desktop/header-girl.png    1x,
+              ./images/desktop/header-girl@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/header-girl.png    1x,
+              ./images/tablet/header-girl@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/desktop/header-girl.png" alt="Girl" width="293" />
+        </picture>
+      </div>
+    </header>
+    <main>
+      <section class="products" id="products">
+        <div class="container">
+          <div class="title__box">
+            <p class="products__subtitle">100% natural</p>
+            <h2 class="products__title">Products</h2>
+          </div>
+
+          <ul class="products__list list">
+            <li class="products__item">
+              <div class="icecream__box">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/desktop/product1.png    1x,
+                      ./images/desktop/product1@2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/tablet/product1.png    1x,
+                      ./images/tablet/product1@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="
+                      ./images/mobile/product1.png    1x,
+                      ./images/mobile/product1@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="products__image"
+                    src="./images/desktop/product1.png"
+                    alt="ice-cream"
+                    width="335"
+                  />
+                </picture>
+                <h2 class="products__name">Ice cream</h2>
+                <span class="products__dots">
+                  <svg class="dots__svg">
+                    <use href="./images/sprite.svg#group-circle"></use>
+                  </svg>
+                </span>
+                <p class="products__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+                <a class="products__link" href="/">
+                  <svg class="products__link--arrow">
+                    <use href="./images/sprite.svg#icon-products-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <picture>
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/desktop/product2.png    1x,
+                    ./images/desktop/product2@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/tablet/product2.png    1x,
+                    ./images/tablet/product2@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/mobile/product2.png    1x,
+                    ./images/mobile/product2@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="products__image"
+                  src="./images/desktop/product2.png"
+                  alt="ice-cream"
+                  width="335"
+                />
+              </picture>
+              <div class="coffee__box">
+                <h2 class="products__name">Ice coffee</h2>
+                <span class="products__dots">
+                  <svg class="dots__svg">
+                    <use href="./images/sprite.svg#group-circle"></use>
+                  </svg>
+                </span>
+                <p class="products__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+                <a class="products__link" href="/">
+                  <svg class="products__link--arrow">
+                    <use href="./images/sprite.svg#icon-products-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <li class="products__item">
+              <picture>
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/desktop/product3.png    1x,
+                    ./images/desktop/product3@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/tablet/product3.png    1x,
+                    ./images/tablet/product3@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    ./images/mobile/product3.png    1x,
+                    ./images/mobile/product3@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="products__image"
+                  src="./images/desktop/product3.png"
+                  alt="ice-cream"
+                  width="335"
+                />
+              </picture>
+              <div class="milkshake__box">
+                <h2 class="products__name">Milkshakes</h2>
+                <span class="products__dots">
+                  <svg class="dots__svg">
+                    <use href="./images/sprite.svg#group-circle"></use>
+                  </svg>
+                </span>
+                <p class="products__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+                <a class="products__link" href="/">
+                  <svg class="products__link--arrow">
+                    <use href="./images/sprite.svg#icon-products-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="making" id="how_made">
+        <div class="container">
+          <p class="making__subtitle">tradition and love</p>
+          <h2 class="making__title">how it’s made?</h2>
+          <div class="making__wrapper">
+            <picture class="making__img">
+              <source
+                srcset="
+                  ./images/desktop/cow-milk.png    1x,
+                  ./images/desktop/cow-milk@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/cow-milk.png    1x,
+                  ./images/tablet/cow-milk@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/cow-milk.png    1x,
+                  ./images/mobile/cow-milk@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class=""
+                src="./images/desktop/cow-milk.png"
+                alt="A jug of milk on the background of a cow"
+              />
+            </picture>
+
+            <div class="making__wrapper-text">
+              <p class="making__text-dark">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                eleifend erat at justo fringilla.
+              </p>
+              <p class="making__text-light making__text-light--f">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt.
+              </p>
+              <p class="making__text-light making__text-light--s">
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+              <a href="" class="making__btn"
+                ><span>Read more</span>
+                <svg class="making__btn-icon">
+                  <use href="./images/sprite.svg#read-more-button"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="making__list">
+            <li class="making__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/icon1.png    1x,
+                    ./images/desktop/icon1@2x.png 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/icon1.png    1x,
+                    ./images/tablet/icon1@2x.png 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mobile/icon1.png    1x,
+                    ./images/mobile/icon1@2x.png 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/desktop/icon1.png"
+                  alt="milk"
+                  class="making__item-img icon1"
+              /></picture>
+
+              <span class="making__data">721</span>
+              <p class="making__item-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="making__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/icon2.png    1x,
+                    ./images/desktop/icon2@2x.png 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/icon2.png    1x,
+                    ./images/tablet/icon2@2x.png 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mobile/icon2.png    1x,
+                    ./images/mobile/icon2@2x.png 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  class="making__item-img icon2"
+                  src="./images/desktop/icon2.png"
+                  alt="fruits"
+              /></picture>
+              <span class="making__data">16kg</span>
+              <p class="making__item-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="making__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/icon3.png    1x,
+                    ./images/desktop/icon3@2x.png 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/icon3.png    1x,
+                    ./images/tablet/icon3@2x.png 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mobile/icon3.png    1x,
+                    ./images/mobile/icon3@2x.png 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/desktop/icon3.png"
+                  alt="ice-cream"
+                  class="making__item-img icon3"
+              /></picture>
+
+              <span class="making__data">84</span>
+              <p class="making__item-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+          <picture class="collage-img">
+            <source
+              srcset="
+                ./images/desktop/collage.png    1x,
+                ./images/desktop/collage@2x.png 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./images/tablet/collage.png    1x,
+                ./images/tablet/collage@2x.png 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ./images/mobile/collage.png    1x,
+                ./images/mobile/collage@2x.png 2x
+              "
+              media="(max-width: 767px)" />
+            <img src="./images/desktop/collage.png" alt="ice-cream" class=""
+          /></picture>
+        </div>
+      </section>
+
+      <section class="feedback" id="collage">
+        <h1 class="hidden">Feedback</h1>
+        <div class="container feedback-box">
+          <div class="slider">
+            <div class="slider__item">
+              <picture class="feedback__picture">
+                <source
+                  srcset="
+                    ./images/desktop/person1.png    1x,
+                    ./images/desktop/person1@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/person1.png"
+                  alt="Emily Los Angeles"
+                />
+              </picture>
+
+              <div class="feedback__box-comments">
+                <svg class="icon-skavichki" width="54px" height="40px">
+                  <use href="./images/sprite.svg#skavichki"></use>
+                </svg>
+                <p class="feedback__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+                <div class="gradient"></div>
+              </div>
+              <div class="feedback__box-client">
+                <svg class="icon-red-dots" width="32px" height="4px">
+                  <use href="./images/sprite.svg#red-dots"></use>
+                </svg>
+                <h2 class="feedback__name">Emily, Los Angeles</h2>
+                <!-- <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#home"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg> -->
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <picture class="feedback__picture">
+                <source
+                  srcset="
+                    ./images/desktop/person2.png    1x,
+                    ./images/desktop/person2@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/person2.png"
+                  alt="Emily Los Angeles"
+                />
+              </picture>
+
+              <div class="feedback__box-comments">
+                <svg class="icon-skavichki" width="54px" height="40px">
+                  <use href="./images/sprite.svg#skavichki"></use>
+                </svg>
+                <p class="feedback__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+                <div class="gradient"></div>
+              </div>
+              <div class="feedback__box-client">
+                <svg class="icon-red-dots" width="32px" height="4px">
+                  <use href="./images/sprite.svg#red-dots"></use>
+                </svg>
+                <h2 class="feedback__name">Emily, Los Angeles</h2>
+                <!-- <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#home"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg> -->
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <picture class="feedback__picture">
+                <source
+                  srcset="
+                    ./images/desktop/person3.png    1x,
+                    ./images/desktop/person3@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/desktop/person3.png"
+                  alt="Emily Los Angeles"
+                />
+              </picture>
+
+              <div class="feedback__box-comments">
+                <svg class="icon-skavichki" width="54px" height="40px">
+                  <use href="./images/sprite.svg#skavichki"></use>
+                </svg>
+                <p class="feedback__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+                <div class="gradient"></div>
+              </div>
+              <div class="feedback__box-client">
+                <svg class="icon-red-dots" width="32px" height="4px">
+                  <use href="./images/sprite.svg#red-dots"></use>
+                </svg>
+                <h2 class="feedback__name">Emily, Los Angeles</h2>
+                <!-- <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#home"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg>
+                <svg class="icon-shome" width="12px" height="12px">
+                  <use href="./images/sprite.svg#gray-circle"></use>
+                </svg> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="address">
+        <div class="bg-container">
+          <ul class="adress__list">
+            <li class="adress__item">
+              <div class="adress-box">
+                <h4 class="adress__title">cafe</h4>
+                <p class="adress__city">Chicago</p>
+                <p class="adress__descript">
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+                <ul class="time__list">
+                  <li>
+                    Monday - Friday <br />
+                    <span class="work-time"> 06:00 AM - 10:00 PM </span>
+                  </li>
+                  <li>
+                    Saturday - Sunday <br />
+                    <span class="work-time"> 08:00 AM - 16:00 PM </span>
+                  </li>
+                </ul>
+                <address class="adress__contacts">
+                  <a href="tel:+61083766284" class="contacts-item"
+                    >+61(0) 383 766 284</a
+                  >
+                  <a href="mailto:noreply@envato.com" class="contacts-item"
+                    >noreply@envato.com</a
+                  >
+                </address>
+              </div>
+            </li>
+            <li class="adress__item">
+              <div class="adress-box">
+                <h4 class="adress__title foodtruck">
+                  <span class="food">food</span>truck
+                </h4>
+                <p class="adress__city">Los Angeles</p>
+                <p class="adress__descript">
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+                <ul class="time__list">
+                  <li>
+                    Monday - Friday <br />
+                    <span class="work-time"> 06:00 AM - 10:00 PM </span>
+                  </li>
+                  <li>
+                    Saturday - Sunday <br />
+                    <span class="work-time"> 08:00 AM - 16:00 PM </span>
+                  </li>
+                </ul>
+                <address class="adress__contacts">
+                  <a href="tel:+61083766284" class="contacts-item"
+                    >+61(0) 383 766 284</a
+                  >
+                  <a href="mailto:noreply@envato.com" class="contacts-item"
+                    >noreply@envato.com</a
+                  >
+                </address>
+              </div>
+            </li>
+            <li class="adress__item">
+              <div class="adress-box">
+                <h4 class="adress__title">cafe</h4>
+                <p class="adress__city">New York</p>
+                <p class="adress__descript">
+                  Fusce ut velit laoreet, tempus arcu molestie vulputate
+                </p>
+                <ul class="time__list">
+                  <li>
+                    Monday - Friday <br />
+                    <span class="work-time"> 06:00 AM - 10:00 PM </span>
+                  </li>
+                  <li>
+                    Saturday - Sunday <br />
+                    <span class="work-time"> 08:00 AM - 16:00 PM </span>
+                  </li>
+                </ul>
+                <address class="adress__contacts">
+                  <a href="tel:+61083766284" class="contacts-item"
+                    >+61(0) 383 766 284</a
+                  >
+                  <a href="mailto:noreply@envato.com" class="contacts-item"
+                    >noreply@envato.com</a
+                  >
+                </address>
+              </div>
+            </li>
+          </ul>
+          <div class="adress-link">
+            <a href="" class="locations"
+              >Our Locations
+              <svg class="white-arrow">
+                <use href="./images/sprite.svg#white-arrow"></use>
+              </svg>
+            </a>
+            <br />
+            <a href="" class="locations franchise"
+              >Franchise
+              <svg class="red-arrow">
+                <use href="./images/sprite.svg#read-more-button"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container footer__container">
+        <div class="footer__box">
+          <h1 class="footer__title">
+            Homemade ice cream made <br />
+            <span class="with__subtitle"> with</span>
+            <span class="passion__subtitle"> passion</span>
+          </h1>
+        </div>
+
+        <div class="follow__box">
+          <ul class="list follow__list">
+            <li class="follow__item">
+              <a href="" aria-label="GitHub" class="follow__sn">
+                <svg class="follow__icon" width="18.8px" height="18.8px">
+                  <use href="./images/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow__item">
+              <a href="" class="follow__sn" aria-label="Telegram">
+                <svg class="follow__icon" width="18.8px" height="18.8px">
+                  <use href="./images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow__item">
+              <a href="" class="follow__sn" aria-label="Facebook">
+                <svg class="follow__icon" width="18.8px" height="18.8px">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <address class="footer__contact">
+            <span class="footer__text">Feel free to contact </span>
+            <a href="tel:+61(0)383766284" class="footer__tel"
+              >+61 (0) 383 766 284</a
+            >
+          </address>
+        </div>
+      </div>
+
+      <div class="rigths__box">
+        <p class="owner__text">&copy; 2019 - IceCream.</p>
+        <p class="rights__text">All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal-w">
+        <button
+          class="close-modal"
+          data-close-modal
+          type="button"
+          aria-label="Закрыть"
+        >
+          <svg class="close-icon" width="14" height="14">
+            <use href="./images/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal-content" id="user-data-modal">
+          <b class="modal-header"
+            >Please leave the necessary information for the order</b
+          >
+          <label class="modal-label" for="name">Name</label>
+          <div class="input-wrapper">
+            <input
+              class="input"
+              type="text"
+              placeholder=" "
+              pattern="^[А-Яа-яЁё\sa-zA-Z]+$"
+              id="name"
+              name="name"
+              required
+            />
+            <svg class="modal-icon">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="tel">Phone number</label>
+          <div class="input-wrapper">
+            <input
+              class="input"
+              type="tel"
+              pattern="[0-9]{5,10}"
+              placeholder=" "
+              id="tel"
+              name="telephone"
+              required
+            />
+            <svg class="modal-icon">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="client-address">Address</label>
+          <div class="input-wrapper">
+            <input
+              class="input"
+              type="address"
+              placeholder=" "
+              id="client-address"
+              name="address"
+              required
+            />
+            <svg class="modal-icon">
+              <use href="./images/sprite.svg#icon-home"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="comment"
+            >Choose product and taste</label
+          >
+          <textarea
+            class="textarea"
+            name="comment"
+            id="comment"
+            placeholder="Chocolate ice cream"
+            required
+          ></textarea>
+
+          <div role="group" class="delivery-wrapper">
+            <p class="modal-label">Delivery method:</p>
+            <label class="delivery-item" for="s-d">
+              <input
+                class="hidden input_delivery"
+                id="s-d"
+                name="delivery"
+                type="radio"
+                value="self"
+              />
+              <span class="delivery-text">Self-delivery</span>
+            </label>
+            <label class="delivery-item" for="h-d">
+              <input
+                class="hidden input_delivery"
+                id="h-d"
+                name="delivery"
+                type="radio"
+                value=""
+              />
+              <span class="delivery-text">Home delivery service</span>
+            </label>
+          </div>
+
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

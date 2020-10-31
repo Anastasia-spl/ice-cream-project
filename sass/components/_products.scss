@@ -1,0 +1,235 @@
+.products {
+  @include for-size(mobile) {
+    padding: 121px 0 98px 0;
+  }
+  @include for-size(tablet) {
+    padding: 122px 0 112px 0;
+  }
+  @include for-size(desktop) {
+    padding: 127px 0 119px 0;
+  }
+}
+
+.title__box {
+  text-align: center;
+
+  @include for-size(mobile) {
+    margin-bottom: 144px;
+  }
+  @include for-size(tablet) {
+    margin-bottom: 150px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 259px;
+  }
+}
+
+.products__title {
+  font-family: $title-font;
+  color: $accent-color;
+  font-size: 34px;
+  font-weight: $normal;
+  line-height: 1.2;
+  letter-spacing: $primary-let-spacing;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include for-size(tablet) {
+    font-size: 48px;
+  }
+  @include for-size(desktop) {
+    font-size: 58px;
+  }
+}
+.products__subtitle {
+  font-family: $title-font;
+  color: $sub-title-color;
+  font-size: 18px;
+  font-weight: $normal;
+  line-height: 1.5;
+  letter-spacing: $primary-let-spacing;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+
+  @include for-size(tablet) {
+    font-size: 26px;
+  }
+  @include for-size(desktop) {
+    font-size: 30px;
+  }
+}
+.products__list {
+  margin: 0;
+  padding: 0;
+  border-radius: 24px;
+
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+.products__item {
+  position: relative;
+  text-align: center;
+  border-radius: 24px;
+  transition: transform, box-shadow, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    -webkit-box-shadow: 1px 7px 8px 3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 1px 7px 8px 3px rgba(0, 0, 0, 0.45);
+    box-shadow: 1px 7px 8px 3px rgba(0, 0, 0, 0.45);
+  }
+
+  @include for-size(tablet-only) {
+    max-width: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @include for-size(tablet) {
+    max-width: 220px;
+
+    width: calc((100% - 20px * 2) / 3);
+    margin-right: 20px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    max-width: 330px;
+
+    width: calc((100% - 24px * 2) / 3);
+    margin-right: 24px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.products__image {
+  position: absolute;
+
+  @include for-size(mobile) {
+    max-width: 249px;
+    top: -24%;
+    left: 5.5%;
+  }
+  @include for-size(tablet) {
+    max-width: 225px;
+    top: -20%;
+    left: 0;
+  }
+  @include for-size(desktop) {
+    max-width: 335px;
+    top: -40%;
+    left: 0;
+  }
+}
+.products__name {
+  color: $white-color;
+  font-family: $title-font;
+  font-size: 20px;
+  font-weight: $normal;
+  line-height: 1.5;
+  letter-spacing: $primary-let-spacing;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+.dots__svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 26px;
+  height: 6px;
+}
+.products__text {
+  color: $white-color;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: $bold;
+  line-height: 1.5;
+  letter-spacing: $primary-let-spacing;
+  margin: 0 0 30px 0;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 62px 0;
+  }
+}
+.products__link {
+  @include flexbox(center, center);
+  background-color: $white-color;
+  color: $accent-color;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color, color, 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+.products__link--arrow {
+  fill: currentColor;
+  width: 10px;
+  height: 10px;
+  align-items: center;
+}
+
+.icecream__box {
+  background-color: $ice-cream-bg-color;
+  border-radius: 24px;
+  padding: 161px 41px 41px;
+
+  @include for-size(tablet) {
+    padding: 152px 11px 40px;
+  }
+
+  @include for-size(desktop) {
+    padding: 163px 45px 50px;
+  }
+}
+
+.coffee__box {
+  background-color: $ice-coffee-bg-color;
+  border-radius: 24px;
+  padding: 161px 41px 41px;
+
+  @include for-size(tablet) {
+    padding: 152px 11px 40px;
+  }
+
+  @include for-size(desktop) {
+    padding: 163px 45px 50px;
+  }
+}
+.milkshake__box {
+  background-color: #c2e297;
+  border-radius: 24px;
+  padding: 161px 41px 41px;
+
+  @include for-size(tablet) {
+    padding: 152px 11px 40px;
+  }
+
+  @include for-size(desktop) {
+    padding: 163px 45px 50px;
+  }
+}

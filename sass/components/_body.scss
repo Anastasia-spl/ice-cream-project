@@ -1,0 +1,45 @@
+body {
+  font-family: "DMSans", sans-serif;
+  color: $primary-text-color;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 740px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1090px;
+  }
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
