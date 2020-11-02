@@ -214,7 +214,10 @@
   border-color: transparent;
   font-weight: 700;
 }
-
+.input_delivery:checked + .delivery-text {
+  font-weight: 700;
+  font-size: 13px;
+}
 .modal-btn {
   border: none;
   align-self: center;
